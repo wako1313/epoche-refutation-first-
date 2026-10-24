@@ -44,3 +44,14 @@ Le vrai contrôleur ÉPOCHÉ-DP a choisi V10 sur les 100 exécutions DEV ; aucun
 Croyance 99 % sparse → POLYMATH ; 99 % dense → V10 (tests réussis). Un diagnostic **artificiellement parfait** avec 32 évaluations réellement facturées produit sur DEV +0,001431 de gain de loss moyen (20 instances, cinq graines) si linéaire et sparse sont favorisés, mais présente quatre instances ayant au moins une violation H4. Aucun gain de véritable sonde n'est démontré et **les 200 instances G2 n'ont pas été générées**.
 
 Archive de conversation reproductible (non importée intégralement dans GitHub) : `EPOCHE_G1bis_H2_contrepreuves_DEV_2026_10_24.zip`, SHA256 `22ba1ee58a9a3032ebd6a03122781ac0c3696537b51a82063fca2bbba2d2bcf7`, manifeste de 80 fichiers vérifiés et huit tests réussis.
+
+## v0.3 — Résultat DEV du coût d'opportunité (24 octobre 2026)
+
+- [Rapport de contre-épreuve V10/cache, preuve algébrique et pilote corrigé](dev/RVOI_v03_BUDGET_CACHE_DEV_RESULTS_2026_10_24.md).
+- Les 800 profils V10 montrent 100/100 trajectoires monotones, mais seulement **7/100 convexes**.
+- Les **4/20 instances H4** du test artificiel précédent retombent à **0/20** lorsque l'on maintient **90 itérations V10** et que l'on comptabilise les évaluations physiques partagées avec le cache (max. 1190/1261).
+- L'oracle artificiellement informé des familles améliore la loss moyenne DEV de **+0,001486**, sans sonde discriminante réelle ; **aucune garantie H4 ≤2 % ni H2 +0,002 n'est validée**.
+- La RVoI budgétée doit faire apparaître le coût d'opportunité **une seule fois**, via le risque terminal au budget restant.
+- Archive de reproduction complète (code + 800 profils + 100 replays) : `EPOCHE_v03_RVOI_budget_cache_DEV_2026_10_24.zip`, SHA256 `a9385c067d5536b28e1383e099f504afc0c7e498f0e0381b262c30c4693677d6`, disponible dans la conversation, **pas encore importée intégralement sur GitHub**.
+
+**G2 reste NO_START ; les seuils H1–H4 ne sont pas changés.**
