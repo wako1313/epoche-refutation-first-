@@ -75,3 +75,14 @@ Archive de conversation reproductible (non importée intégralement dans GitHub)
 - Archive autonome des sources auditées et des traces : EPOCHE_MARGIN_GATE_AUDIT_V10_UCERT_2026_10_24.zip (SHA256 183f7b6913e9985b61d5514440a0472150bbe6c42fb1d9ec54c8ba10b3112818), disponible dans cette conversation.
 
 **G2 reste NO_START ; aucune hypothèse H1–H4 modifiée.**
+
+## Porte G-DET — audit complémentaire v0.2 (24 octobre 2026)
+
+- [Second audit AST et tests adversariaux de la borne physique](dev/GDET_v02_SECOND_AUDIT_2026_10_24.md).
+- [Erratum au brouillon MARGIN_GATE v0.2](preregistration/MARGIN_GATE_v0.2_ERRATUM_2026_10_24.md).
+- **U_cert=1171** : borne serrée pour `Engine` mode `tabu`, 90 itérations, 12 voisins, 1 redémarrage par **itération**, environnement statique, cache permanent.
+- **196/196** vérifications adversariales/DEV sous la borne ; cache désactivé → 1261 évaluations physiques ; **contre-exemple CPU 2,566 s** avec 1171 évaluations physiques.
+- Rétrocontrôle : G-DET aurait refusé les **900/900** trajectoires des budgets physiques contraints avec k=32.
+- Archive autonome reproductible : `EPOCHE_GDET_v02_SECOND_AUDIT_DEV_2026_10_24.zip` ; SHA256 `a378911d7ab444b9d5a9d68e3b6ec9421c93eb254e320e2d7f7ccce09bea0986`, dans la conversation. Les fichiers bruts ne sont pas encore tous miroités sur GitHub.
+
+**G2 NO_START** : contrôle CPU complet, DEV-VAL indépendant, vraie sonde et revue humaine externe si requise toujours ouverts.
