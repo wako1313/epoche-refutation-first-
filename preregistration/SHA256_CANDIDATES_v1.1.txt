@@ -1,0 +1,7 @@
+# SHA256 des documents candidats (contenu UTF-8 des fichiers GitHub)
+# v1.1 G2 est un candidat NON SCELLE, aucune instance G2 generee.
+# Ces empreintes ne constituent pas le manifeste final incluant le code et les donnees.
+5e8e8978fcd32b8fefea246fe8800ebd22ebefd7a1d53be5713216305b8faf4a  preregistration/G2_PROTOCOL_CANDIDATE_v1.1.md
+971539600f274254d464728bd3219da99d6bed435ad97996655f016b8a60ca1f  preregistration/G2_ADV_PROTOCOL_CANDIDATE_v0.2.md
+7a9bbb46a30f0f41736bb94d3275c5e9ede0cfa2695f322a28f88ad21422590d  preregistration/G2_DEV_PILOT_CALIBRATION_PLAN_v1.0.md
+2a7b607e89fa854f6636c25ca838ae8c351da5eb0d8f27ab497acf870c3c0386  preregistration/COMPARISON_AND_AMENDMENTS_v1.1.md
