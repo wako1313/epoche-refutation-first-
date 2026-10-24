@@ -24,3 +24,12 @@ Les archives historiques V10/POLYMATH et G1bis existent, mais leur seule présen
 ## Gouvernance
 
 H1–H4 sont des conditions strictes d'autorisation de G3. G2-adv est une investigation **distincte** ; les résultats négatifs sont obligatoirement publiés. Aucune revendication de « nouveau paradigme démontré », de robustesse universelle ou de supériorité contre GOMEA/MaxSAT/MIP à ce stade.
+
+
+## Résultats techniques du 24 octobre 2026 (DEV uniquement)
+
+- [Rapport du pilote DEV](dev/DEV_PILOT_2026_10_24_RESULTS.md) : 300 exécutions équilibrées de V10 / sondes fixes+V10 / ÉPOCHÉ-DP, 20 exécutions POLYMATH seul et profilage incomplet (90/200).
+- [Moyennes appariées des 20 instances](dev/DEV_20_INSTANCE_PAIRED_MEANS.csv).
+- [Amendement candidat v1.2, non scellé](preregistration/G2_AMENDMENT_CANDIDATE_v1.2.md).
+
+Le vrai contrôleur ÉPOCHÉ-DP a choisi V10 sur les 100 exécutions DEV ; aucun gain de score par rapport à V10 dans cette expérience. L'archive complète du code et des traces est disponible comme artefact de conversation, identifiée par le SHA256 `0acc91e6da6b2d84e6ff3bb5dd230af86bad0eb91cd3fb7622891ebe059a0b72`, **mais pas encore intégralement chargée sur GitHub**. Aucun holdout G2 n'a été généré.
