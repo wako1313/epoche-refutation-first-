@@ -33,3 +33,14 @@ H1–H4 sont des conditions strictes d'autorisation de G3. G2-adv est une invest
 - [Amendement candidat v1.2, non scellé](preregistration/G2_AMENDMENT_CANDIDATE_v1.2.md).
 
 Le vrai contrôleur ÉPOCHÉ-DP a choisi V10 sur les 100 exécutions DEV ; aucun gain de score par rapport à V10 dans cette expérience. L'archive complète du code et des traces est disponible comme artefact de conversation, identifiée par le SHA256 `0acc91e6da6b2d84e6ff3bb5dd230af86bad0eb91cd3fb7622891ebe059a0b72`, **mais pas encore intégralement chargée sur GitHub**. Aucun holdout G2 n'a été généré.
+
+
+## Contrôles DP et falsification DEV de H2 (24 octobre 2026)
+
+- [Contrôles à croyance concentrée, simulateur de sonde parfaite et résultats appariés](dev/DP_CONSISTENCY_ORACLE_DEV_2026_10_24.md).
+- [Amendement H2 v1.3 : CANDIDAT NON SCELLÉ](preregistration/G2_H2_AMENDMENT_CANDIDATE_v1.3.md).
+- [Spécification D₂, sans développement de sonde](dev/D2_PARSIMONY_SPEC_CANDIDATE.md).
+
+Croyance 99 % sparse → POLYMATH ; 99 % dense → V10 (tests réussis). Un diagnostic **artificiellement parfait** avec 32 évaluations réellement facturées produit sur DEV +0,001431 de gain de loss moyen (20 instances, cinq graines) si linéaire et sparse sont favorisés, mais présente quatre instances ayant au moins une violation H4. Aucun gain de véritable sonde n'est démontré et **les 200 instances G2 n'ont pas été générées**.
+
+Archive de conversation reproductible (non importée intégralement dans GitHub) : `EPOCHE_G1bis_H2_contrepreuves_DEV_2026_10_24.zip`, SHA256 `22ba1ee58a9a3032ebd6a03122781ac0c3696537b51a82063fca2bbba2d2bcf7`, manifeste de 80 fichiers vérifiés et huit tests réussis.
