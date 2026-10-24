@@ -65,3 +65,13 @@ Archive de conversation reproductible (non importée intégralement dans GitHub)
 - Archive exécutable fournie dans la conversation : EPOCHE_v04_BUDGET_CONTRAINT_DEV_2026_10_24.zip, SHA256 6fcb0c07ac24fcdc852bfc220502f58ca4ade0348078d6e287a21c9f8e80b7a6 ; **les fichiers bruts ne sont pas encore présents sur GitHub**.
 
 **G2 demeure NO_START. Aucun seuil H1–H4 n'est modifié.**
+
+## Audit G-DET de V10 — borne déterministe (24 octobre 2026)
+
+- [Preuve et audit reproductible du code de V10](dev/V10_UCERT_GDET_CODE_AUDIT_2026_10_24.md).
+- Pour V10/tabu configuré à 90 pas et 12 voisins avec cache permanent dans un environnement statique, **U_cert = 1171 évaluations physiques**. Borne démontrée par invariant de cache et atteinte sur environnement synthétique.
+- Sous B=1261, k=32, une marge supplémentaire delta≤58 est admissible ; sous B=1158, k=32, G-DET refuse. D₂ 32 paires / 128 appels est inadmissible à B=1261 pour ce certificat.
+- 9 tests réussis, 100/100 paires de trajectoires identiques avec 32 évaluations séparées et cache commun. La preuve et les tests ne certifient **pas** le CPU, un autre solveur terminal, ni H4 de la politique complète.
+- Archive autonome des sources auditées et des traces : EPOCHE_MARGIN_GATE_AUDIT_V10_UCERT_2026_10_24.zip (SHA256 183f7b6913e9985b61d5514440a0472150bbe6c42fb1d9ec54c8ba10b3112818), disponible dans cette conversation.
+
+**G2 reste NO_START ; aucune hypothèse H1–H4 modifiée.**
