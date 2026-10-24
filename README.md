@@ -55,3 +55,13 @@ Archive de conversation reproductible (non importée intégralement dans GitHub)
 - Archive de reproduction complète (code + 800 profils + 100 replays) : `EPOCHE_v03_RVOI_budget_cache_DEV_2026_10_24.zip`, SHA256 `a9385c067d5536b28e1383e099f504afc0c7e498f0e0381b262c30c4693677d6`, disponible dans la conversation, **pas encore importée intégralement sur GitHub**.
 
 **G2 reste NO_START ; les seuils H1–H4 ne sont pas changés.**
+
+## Nouveau contrôle DEV — budget contraint / coût d'opportunité
+
+- [Rapport de 900 exécutions à plafond physique dur, 20 instances × 5 graines](dev/DEV_HARD_BUDGET_OPPORTUNITY_2026_10_24.md).
+- À B=1158 / 1100 / 1042, retirer 32 évaluations fait perdre en moyenne **0,000137 / 0,000160 / 0,000476** de score V10, avec respectivement **2/20 / 5/20 / 6/20 instances** présentant une violation >0,001 sur au moins une graine.
+- Les anciennes courbes de budget ne prédisent pas correctement ces pertes car elles utilisent un autre ordonnanceur. Le mécanisme physique de cache/arrêt fait partie de la calibration.
+- 32 appels aléatoires payés mais non informatifs produisent exactement les mêmes scores que la simple réservation de 32 appels sur les 300 paires : **aucun diagnostic de classe réalisable n'est encore validé**.
+- Archive exécutable fournie dans la conversation : EPOCHE_v04_BUDGET_CONTRAINT_DEV_2026_10_24.zip, SHA256 6fcb0c07ac24fcdc852bfc220502f58ca4ade0348078d6e287a21c9f8e80b7a6 ; **les fichiers bruts ne sont pas encore présents sur GitHub**.
+
+**G2 demeure NO_START. Aucun seuil H1–H4 n'est modifié.**
